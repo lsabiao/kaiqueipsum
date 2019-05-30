@@ -49,7 +49,21 @@ asCarinhas = [
     "(•̀ᴗ•́)و",
     "ಥ_ಥ",
     "(⊙_☉)",
-    "(ง •̀_•́)ง"
+    "(ง •̀_•́)ง",
+    "乁(‍‍ ͡o‍‍͜つ‍‍ ͡o‍‍)ㄏ‍",
+    "Ƹ‍‍◑‍‍ヮ‍‍◐‍‍Ʒ‍",
+    "( ͡°ᴥ ͡° ʋ)",
+    "(̅(̅_̅_̅_̅м̲̅a̲̅я̲̅l̲̅b̲̅o̲̅r̲̅o̲̅̅_̅_̅̅(ด้้้้้็็็",
+    "... ♫♪.ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı.♫♪ ... ┐(・。・┐) ",
+    "︻デ═一",
+    "┌∩┐(◣_◢)┌∩┐",
+    "-`ღ´-",
+    "ᶠᶸᶜᵏ♥ᵧₒᵤ",
+    "୧ʕ•̀ᴥ•́ʔ୨",
+    "ℓ٥ﻻ ﻉ√٥υ",
+    "───==≡≡ΣΣ((( つºل͜º)つ",
+    "ヽ(⌐■_■)ノ♪♬",
+    "Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ",
 ]
 
 
@@ -64,9 +78,3 @@ if __name__ == "__main__":
 
     pre = "{red}{palavra}{reset} é {blue}{obj}{reset} {green}{pes}{reset} {car}".format(palavra = palavra,obj = objeto, pes = pessoa,car = carinha, red = cRED, blue=cBLUE, green=cGREEN,reset=cRESET_ALL)
     print(pre)
-
-
-
-
-
-
