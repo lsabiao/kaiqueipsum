@@ -36,7 +36,15 @@ asPessoas = [
     "Do Satanista",
     "Do Sagrado",
     "Do Programador",
-    "Do Desajustado"
+    "Do Desajustado",
+    "Do Paladino",
+    "Do Clérigo",
+    "De Odin",
+    "Do Bom Samaritano",
+    "Do Assustado",
+    "Do Absoluto",
+    "Do Excomungado",
+    "Do Fraco"
 ]
 
 asCarinhas = [
