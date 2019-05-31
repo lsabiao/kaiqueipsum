@@ -91,7 +91,7 @@ if __name__ == "__main__":
         pessoa = random.choice(asPessoas)
         carinha = random.choice(asCarinhas)
 
-        pre = "{red}{palavra}{reset} é {blue}{obj}{reset} {green}{pes}{reset} {car}"\
+        pre = "\n{red}{palavra}{reset} é {blue}{obj}{reset} {green}{pes}{reset} {car}\n"\
         .format(palavra=palavra, obj=objeto, pes=pessoa, car=carinha, red=cRED,
                 blue=cBLUE, green=cGREEN, reset=cRESET_ALL)
 
