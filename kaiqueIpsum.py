@@ -4,6 +4,12 @@ import random
 import sys
 import platform
 
+
+class RuimError(Exception):
+    def __init__(self, message="Ruuuuimmm esse erro, Hein!!!"):
+        super().__init__(message)
+
+
 if(platform.system() == "Linux"):
     cRED = "\033[31m"
     cBLUE = "\033[34m"
@@ -77,12 +83,18 @@ asCarinhas = [
 
 if __name__ == "__main__":
     try:
-        palavra = sys.argv[1].upper()+" "+(" ".join(sys.argv[2:]))
-    except:
-        palavra = "O Uso Errado"
-    objeto = random.choice(osObjetos)
-    pessoa = random.choice(asPessoas)
-    carinha = random.choice(asCarinhas)
+        try:
+            palavra = sys.argv[1].upper()+" "+(" ".join(sys.argv[2:]))
+        except:
+            palavra = "O Uso Errado"
+        objeto = random.choice(osObjetos)
+        pessoa = random.choice(asPessoas)
+        carinha = random.choice(asCarinhas)
 
-    pre = "{red}{palavra}{reset} é {blue}{obj}{reset} {green}{pes}{reset} {car}".format(palavra = palavra,obj = objeto, pes = pessoa,car = carinha, red = cRED, blue=cBLUE, green=cGREEN,reset=cRESET_ALL)
-    print(pre)
+        pre = "{red}{palavra}{reset} é {blue}{obj}{reset} {green}{pes}{reset} {car}"\
+        .format(palavra=palavra, obj=objeto, pes=pessoa, car=carinha, red=cRED,
+                blue=cBLUE, green=cGREEN, reset=cRESET_ALL)
+
+        print(pre)
+    except:
+        raise RuimError
